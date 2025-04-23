@@ -12,7 +12,7 @@ log "/////////////// Starting setup_mac.sh | $(date) ///////////////"
 # ---------------------
 # Git Configuration
 # ---------------------
-log "🔧 Configuring Git..." 
+log "🔧 Configuring Git commit template..." 
 
 # Commit template
 if git config --get commit.template | grep -q '.gitmessage.txt'; then
@@ -28,6 +28,36 @@ if git config --get core.editor | grep -q 'code --wait'; then
 else
   log "Setting Git core.editor to VS Code"
   git config --global core.editor "code --wait"
+fi
+
+# ---------------------
+# Install nvm
+# ---------------------
+log "🔧 Checking for nvm..."
+
+if [ -d "$HOME/.nvm" ]; then
+	log "✅ nvm already installed"
+else
+	log "📥 Installing nvm..."
+
+	curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+
+	log "✅ nvm installation script run. Sourcing nvm..."
+
+	# Add nvm to shell startup files (if not already there)
+	if [[ $SHELL == *"zsh"* ]]; then
+		if ! grep -q 'NVM_DIR' "$HOME/.zprofile"; then
+			echo 'export NVM_DIR="$HOME/.nvm"' >> "$HOME/.zprofile"
+			echo '[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"' >> "$HOME/.zprofile"
+		fi
+		source "$HOME/.zprofile"
+	else
+		if ! grep -q 'NVM_DIR' "$HOME/.bash_profile"; then
+			echo 'export NVM_DIR="$HOME/.nvm"' >> "$HOME/.bash_profile"
+			echo '[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"' >> "$HOME/.bash_profile"
+		fi
+		source "$HOME/.bash_profile"
+	fi
 fi
 
 # ---------------------
@@ -57,6 +87,12 @@ if command -v code >/dev/null 2>&1; then
 else
   log "⚠️  'code' command not found. You may need to restart your terminal or run: source $PROFILE" 
 fi
+
+# ---------------------
+# Install node and download dependencies
+# ---------------------
+nvm install node
+npm install
 
 log "/////////////// Finished running setup_mac.sh | $(date) ///////////////" 
 log "🎉 Setup complete! Please restart your terminal window before continuing. 🎉"

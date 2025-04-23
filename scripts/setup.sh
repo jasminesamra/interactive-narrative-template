@@ -23,3 +23,5 @@ fi
 
 log "/////////////// Finished running setup.sh | $(date) ///////////////" 
 log "🎉 Setup complete! Please restart your terminal window before continuing. 🎉"
+
+# TODO: Figure out what to do about nvm on Windows machines 
