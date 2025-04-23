@@ -1,0 +1,18 @@
+// This file contains settings for the Visual Studio Code editor.
+// It configures the editor to use Prettier as the default formatter, enables format on save,
+// and sets up ESLint to fix issues on save. It also specifies the languages that ESLint should validate.
+// Additionally, it configures the Svelte extension to use its own formatter for Svelte files.
+
+{
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"editor.formatOnSave": true,
+	"editor.codeActionsOnSave": {
+		"source.fixAll.eslint": "explicit"
+	},
+	"eslint.validate": ["javascript", "javascriptreact", "typescript", "typescriptreact", "svelte"],
+	"[svelte]": {
+		"editor.defaultFormatter": "svelte.svelte-vscode"
+	},
+	"files.autoSave": "afterDelay",
+	"files.autoSaveDelay": 1000
+}
