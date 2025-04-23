@@ -1,0 +1,22 @@
+# 📝 Commit Message Guide
+# 
+# Format:
+#   <type>: <short description>
+#
+# Examples:
+#   feat: add interactive chart component
+#   fix: correct logic in data transformation
+#   docs: update README with setup instructions
+#
+# Allowed types:
+#   feat     new feature
+#   fix      bug fix
+#   docs     documentation only
+#   style    formatting, no code change
+#   refactor code change that neither fixes nor adds a feature
+#   test     add or fix tests
+#   chore    changes to tooling, build process, config
+#
+# Leave a blank line below the summary to add an optional longer description.
+# Lines starting with # will be ignored.
+
