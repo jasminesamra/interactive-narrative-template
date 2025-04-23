@@ -1,38 +1,55 @@
-# sv
+# interavtive-narrative-template
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+This project contains everything you need to get started on your first interactive narrative!
 
-## Creating a project
+## Getting Started
 
-If you're seeing this, you've probably already done this step. Congrats!
+### Setting up Git on your local machine
+Follow the instructions [here](https://docs.github.com/en/get-started/git-basics/set-up-git#setting-up-git) to set up Git on your command line, if you aren't already set up with Git. 
 
-```bash
-# create a new project in the current directory
-npx sv create
+You can authentivate via HTTPS or SSH. If this is your first time setting up Git, we recommend you authenticate via HTTPS (if you're already set up to authenticate via SSH, that's alright!).
 
-# create a new project in my-app
-npx sv create my-app
+### Installing
+
+1. Open a terminal window. Navigate to, or create, a directory (folder) where you want to keep your coding projects. For example:
+
+```console
+cd   # navigates to your home user directory
+mkdir code   # creates a new directory called code in your home user directory
+cd code   # navigate into the new `code` directory
+```
+2. Clone the repository
+```console
+git clone https://github.com/jasminesamra/interactive-narrative-template
+cd interactive-narrative-template
 ```
 
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
+3. Run the setup script [TODO: update this with Windows instructions]
+```console
+scripts/setup_mac.sh
+```
+4. If all goes well, you will see the following message in your terminal. If you see something else, reach out in the Discord for help! 
+```
+🎉 Setup complete! Please restart your terminal window before continuing. 🎉
 ```
 
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
+5. Check that everything was installed correctly by running tests:
+```console
+npm run test
 ```
 
-You can preview the production build with `npm run preview`.
+## Deployment
 
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+Add additional notes about how to deploy this on a live system
+
+## Built With
+
+* [TODO]
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+
+## Acknowledgments
+
+[TODO]
