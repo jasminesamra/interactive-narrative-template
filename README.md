@@ -1,4 +1,4 @@
-# interavtive-narrative-template
+# interactive-narrative-template
 
 This project contains everything you need to get started on your first interactive narrative!
 
@@ -10,7 +10,20 @@ Follow the instructions [here](https://docs.github.com/en/get-started/git-basics
 
 You can authenticate via HTTPS or SSH. If this is your first time setting up Git, we recommend you authenticate via HTTPS (if you're already set up to authenticate via SSH, that's alright!).
 
-### Installing
+### Downloading and setting up VSCode
+You will need Visual Studio Code for this project. Find the right download for you machine [here](https://code.visualstudio.com/download) and install it before you continue. 
+
+Then, open VSCode and install three extensions:
+- [Svelte for VS Code](https://marketplace.visualstudio.com/items?itemName=svelte.svelte-vscode)
+- [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+- [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+
+You can get to the extensions menu on a Mac by navigating to Code > Settings > Extensions. Search for each of the extensions listed above and install them.
+![Get to the extensions menu on a Mac by navigating to Code > Settings > Extensions](readme-images/vscode-extension-instructions.png)
+
+Make sure to quit and restart VSCode after installing extensions!
+
+### Cloning and setting up the repo
 
 1. Open a terminal window. Navigate to, or create, a directory (folder) where you want to keep your coding projects. For example:
 
@@ -47,11 +60,11 @@ npm run test
 
 ## Deployment
 
-Add additional notes about how to deploy this on a live system
+[TODO]
 
 ## Built With
 
-- [TODO]
+[TODO]
 
 ## License
 
