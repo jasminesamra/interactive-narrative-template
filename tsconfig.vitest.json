@@ -1,0 +1,7 @@
+{
+	"extends": "./tsconfig.json",
+	"compilerOptions": {
+		"types": ["vitest", "jsdom"]
+	},
+	"include": ["src/**/*.ts", "src/**/*.svelte", "tests/**/*.ts", "tests/**/*.svelte"]
+}
