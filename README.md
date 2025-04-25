@@ -8,6 +8,8 @@ This project contains everything you need to get started on your first interacti
 
 Follow the instructions [here](https://docs.github.com/en/get-started/git-basics/set-up-git#setting-up-git) to set up Git on your command line, if you aren't already set up with Git.
 
+Complete the sections titled, "Setting up Git" and "Authenticating with GitHub from Git." You do not need to complete anything in the "Next steps" section. 
+
 You can authenticate via HTTPS or SSH. If this is your first time setting up Git, we recommend you authenticate via HTTPS (if you're already set up to authenticate via SSH, that's alright!).
 
 ### Downloading and setting up VSCode
@@ -19,7 +21,7 @@ Then, open VSCode and install three extensions:
 - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
 
 You can get to the extensions menu on a Mac by navigating to Code > Settings > Extensions. Search for each of the extensions listed above and install them.
-![Get to the extensions menu on a Mac by navigating to Code > Settings > Extensions](readme-images/vscode-extension-instructions.png)
+![Get to the extensions menu on a Mac by navigating to Code > Settings > Extensions](readme-images/vscode-extension-instructions.png)https://docs.github.com/en/get-started/git-basics/set-up-git#authenticating-with-github-from-git
 
 Make sure to quit and restart VSCode after installing extensions!
 
@@ -46,7 +48,7 @@ cd interactive-narrative-template
 scripts/setup_mac.sh
 ```
 
-4. If all goes well, you will see the following message in your terminal. If you see something else, reach out in the Discord for help!
+4. If all goes well, you will see the following message in your terminal (at the end of a list of other messages). If you don't see this message, reach out in the Discord for help!
 
 ```
 🎉 Setup complete! Please restart your terminal window before continuing. 🎉
